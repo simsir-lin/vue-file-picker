@@ -3,5 +3,8 @@ module.exports = {
     index: {
       entry: "vue/main.js"
     }
+  },
+  css: {
+    extract: false
   }
 };
