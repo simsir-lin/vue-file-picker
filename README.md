@@ -4,13 +4,13 @@
 ### 使用
 1. 安装
 ```bash
-import vueFilePicker from 'vue-file-picker'
+import vueFilePickerWrapper from 'vue-file-picker-wrapper'
 ```
 2. 在html中即可使用组件
 ``` html
-<vue-file-picker>
+<vue-file-picker-wrapper>
   <p>这是slot内容，点击即可选文件</p>
-</vue-file-picker>
+</vue-file-picker-wrapper>
 ```
 
 ### Props
