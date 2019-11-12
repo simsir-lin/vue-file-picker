@@ -12,7 +12,7 @@
 -->
 
 <template>
-  <div class="wrap">
+  <div class="vue-file-picker">
     <div class="file-input-label" @click="startChoose"><slot></slot></div>
     <input
       v-if="length > 1"
@@ -30,6 +30,7 @@
 
 <script>
 export default {
+  name: 'vue-file-picker',
   props: {
     accept: {
       type: String,
@@ -96,17 +97,17 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
-.wrap {
+<style>
+.vue-file-picker {
   position: relative;
 }
-.file-input {
+.vue-file-picker .file-input {
   display: none;
 }
-.file-input-label {
+.vue-file-picker .file-input-label {
   display: block;
-  &:hover {
-    cursor: pointer;
-  }
+}
+.vue-file-picker .file-input-label:hover {
+  cursor: pointer;
 }
 </style>
